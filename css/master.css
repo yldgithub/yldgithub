@@ -1,0 +1,18 @@
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.col-md {
+  margin: 10px;
+  padding: 20px;
+}
+
+textarea {
+  max-width: inherit;
+  height: 100px;
+}
+
+.btn-info {
+  display: none;
+}

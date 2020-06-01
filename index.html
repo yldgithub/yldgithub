@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <div class="col-sm">
+          <img src="assets/dywsmile.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Lean canvas planning for Digital Youth Work</h1>
+      <div class="row">
+        <div class="col-md bg-light">
+          <h4>CHOOSE OUR TECH</h4>
+          <h6>Which app/platforms will work to meet our youth work goals?</h6>
+          <textarea name="name" rows="8" cols="80" id="1"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b1">
+          <div class="" id="i1">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e1">
+          <!-- <h6>What are young people already using?</h6>
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success">
+          <h6>What devices do they have access to?</h6>
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success">
+          <h6>What devices do they have access to?</h6>
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success">
+          <h6>Does our organisation have policy which influences the use of this app for our chosen purpose?</h6>
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success">
+        </div> -->
+        <div class="col-md bg-light">
+
+        </div>
+        <div class="col-md bg-light">
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    const submitButton = document.getElementById('b1')
+    const textArea = document.getElementById('1')
+    const innerDiv = document.getElementById('i1')
+    const editButton = document.getElementById('e1')
+
+    submitButton.addEventListener('click', function () {
+    const message = textArea.value
+    innerDiv.innerHTML = message;
+    textArea.style.display = "none"
+    submitButton.style.display = "none"
+    editButton.style.display = "inline"
+    })
+
+    editButton.addEventListener('click', function () {
+      textArea.style.display = "inline"
+      submitButton.style.display = "inline"
+      editButton.style.display = "none"
+      innerDiv.style.display = "none"
+    })
+
+  </script>
+
+</html>
