@@ -1,74 +1,622 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
-    <nav>
-      <div class="row">
-        <div class="col-sm">
-          <img src="assets/dywsmile.png" alt="">
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <nav>
+    <img src="assets/dywsmile.png" alt="">
+  </nav>
+  <div class="container">
+    <h1>Lean canvas planning for Digital Youth Work</h1>
+  </div>
+      <div class="box1">
+        <h4>OUR YOUTH WORK OUTCOMES</h4>
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <h6>What is our youth work project?</h6>
+              <textarea name="name" rows="8" cols="80" id="6"></textarea>
+              <input type="button" value="Save" class="btn btn-success" id="b6">
+              <div class="" id="i6">
+              </div>
+              <input type="button" name="" value="edit" class="btn btn-info" id="e6">
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <h6>What youth work outcomes are we working towards?</h6>
+              <textarea name="name" rows="8" cols="80" id="7"></textarea>
+              <input type="button" value="Save" class="btn btn-success" id="b7">
+              <div class="" id="i7">
+              </div>
+              <input type="button" name="" value="edit" class="btn btn-info" id="e7">
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <h6>How will we use digital to help deliver our goal?</h6>
+              <textarea name="name" rows="8" cols="80" id="8"></textarea>
+              <input type="button" value="Save" class="btn btn-success" id="b8">
+              <div class="" id="i8">
+              </div>
+              <input type="button" name="" value="edit" class="btn btn-info" id="e8">
+            </div>
+          </div>
       </div>
-    </nav>
-    <div class="container">
-      <h1>Lean canvas planning for Digital Youth Work</h1>
-      <div class="row">
-        <div class="col-md bg-light">
-          <h4>CHOOSE OUR TECH</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box2">
+        <h4>CHOOSE OUR TECH</h4>
+        <div class="item">
           <h6>Which app/platforms will work to meet our youth work goals?</h6>
           <textarea name="name" rows="8" cols="80" id="1"></textarea>
           <input type="button" value="Save" class="btn btn-success" id="b1">
           <div class="" id="i1">
           </div>
           <input type="button" name="" value="edit" class="btn btn-info" id="e1">
-          <!-- <h6>What are young people already using?</h6>
-          <textarea name="name" rows="8" cols="80"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success">
-          <h6>What devices do they have access to?</h6>
-          <textarea name="name" rows="8" cols="80"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success">
-          <h6>What devices do they have access to?</h6>
-          <textarea name="name" rows="8" cols="80"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success">
-          <h6>Does our organisation have policy which influences the use of this app for our chosen purpose?</h6>
-          <textarea name="name" rows="8" cols="80"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success">
-        </div> -->
-        <div class="col-md bg-light">
-
         </div>
-        <div class="col-md bg-light">
-
+        <div class="item">
+          <h6>What are young people already using?</h6>
+          <textarea name="name" rows="8" cols="80" id="2"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success" id="b2">
+          <div class="" id="i2">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e2">
+        </div>
+        <div class="item">
+          <h6>What devices do they have access to?</h6>
+          <textarea name="name" rows="8" cols="80" id="3"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success" id="b3">
+          <div class="" id="i3">
+          </div>
+          <input type="button" name="" value="edit" id="e3" class="btn btn-info">
+        </div>
+        <div class="item">
+          <h6>What devices do they have access to?</h6>
+          <textarea name="name" rows="8" cols="80" id="4"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success" id="b4">
+          <div class="" id="i4">
+          </div>
+          <input type="button" name="" value="edit" id="e4" class="btn btn-info">
+        </div>
+        <div class="item">
+          <h6>Does our organisation have policy which influences the use of this app for our chosen purpose?</h6>
+          <textarea name="name" rows="8" cols="80" id="5"></textarea>
+          <input type="button" name="" value="Save" class="btn btn-success" id="b5">
+          <div class="" id="i5">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e5">
         </div>
       </div>
     </div>
-  </body>
-
-  <script type="text/javascript">
-    const submitButton = document.getElementById('b1')
-    const textArea = document.getElementById('1')
-    const innerDiv = document.getElementById('i1')
-    const editButton = document.getElementById('e1')
-
-    submitButton.addEventListener('click', function () {
-    const message = textArea.value
-    innerDiv.innerHTML = message;
-    textArea.style.display = "none"
-    submitButton.style.display = "none"
-    editButton.style.display = "inline"
-    })
-
-    editButton.addEventListener('click', function () {
-      textArea.style.display = "inline"
-      submitButton.style.display = "inline"
-      editButton.style.display = "none"
-      innerDiv.style.display = "none"
-    })
-
-  </script>
-
+    <div class="col-md-3">
+      <div class="box3">
+        <h4>WHO CAN ACCESS?</h4>
+        <div class="item">
+          <h6>Do the young people have the deivces and internet access they need? </h6>
+          <textarea name="name" rows="8" cols="80" id="9"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b9">
+          <div class="" id="i9">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e9">
+        </div>
+        <div class="item">
+          <h6>What about young people with disabilities?</h6>
+          <textarea name="name" rows="8" cols="80" id="10"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b10">
+          <div class="" id="i10">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e10">
+        </div>
+        <h4>YOUNG PEOPLE SAY</h4>
+        <div class="item">
+          <h6>What do our young people think?</h6>
+          <textarea name="name" rows="8" cols="80" id="11"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b11">
+          <div class="" id="i11">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e11">
+        </div>
+        <div class="item">
+          <h6>What did they say about their digital rights? </h6>
+          <textarea name="name" rows="8" cols="80" id="12"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b12">
+          <div class="" id="i12">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e12">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box4">
+        <h4>GUIDELINES</h4>
+        <div class="item">
+          <h6>What guidelines do I need to create and who for?</h6>
+          <textarea name="name" rows="8" cols="80" id="13"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b13">
+          <div class="" id="i13">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e13">
+        </div>
+        <h4>ACTIVITY</h4>
+        <div class="item">
+          <h6>What will we do?</h6>
+          <textarea name="name" rows="8" cols="80" id="14"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b14">
+          <div class="" id="i14">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e14">
+        </div>
+        <div class="item">
+          <h6>How will we use the app?</h6>
+          <textarea name="name" rows="8" cols="80" id="15"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b15">
+          <div class="" id="i15">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e15">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box5">
+        <h4>SAFETY</h4>
+        <div class="item">
+          <h6>How will we keep young people safe?</h6>
+          <textarea name="name" rows="8" cols="80" id="16"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b16">
+          <div class="" id="i16">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e16">
+        </div>
+        <div class="item">
+          <h6>How we will keep youth workers safe?</h6>
+          <textarea name="name" rows="8" cols="80" id="17"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b17">
+          <div class="" id="i17">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e17">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="box6">
+        <h4>POLICY</h4>
+        <div class="item">
+          <h6>Which of our organisation's policies relate to this project?</h6>
+          <textarea name="name" rows="8" cols="80" id="18"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b18">
+          <div class="" id="i18">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e18">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="box7">
+        <h4>PLANNING</h4>
+        <div class="item">
+          <h6>Costs - Timescales -  Approvals - Evaluation</h6>
+          <textarea name="name" rows="8" cols="80" id="19"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b19">
+          <div class="" id="i19">
+          </div>
+          <input type="button" name="" value="edit" class="btn btn-info" id="e19">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
+
+
+<script type="text/javascript">
+
+const submitButton1 = document.getElementById('b1')
+const textArea1 = document.getElementById('1')
+const innerDiv1 = document.getElementById('i1')
+const editButton1 = document.getElementById('e1')
+
+submitButton1.addEventListener('click', function () {
+  const message1 = textArea1.value
+  innerDiv1.innerHTML = message1;
+  textArea1.style.display = "none"
+  submitButton1.style.display = "none"
+  editButton1.style.display = "inline"
+  innerDiv1.style.display = "inline"
+})
+
+editButton1.addEventListener('click', function () {
+  textArea1.style.display = "inline"
+  submitButton1.style.display = "inline"
+  editButton1.style.display = "none"
+  innerDiv1.style.display = "none"
+})
+
+const submitButton2 = document.getElementById('b2')
+const textArea2 = document.getElementById('2')
+const innerDiv2 = document.getElementById('i2')
+const editButton2 = document.getElementById('e2')
+
+submitButton2.addEventListener('click', function () {
+  const message2 = textArea2.value
+  innerDiv2.innerHTML = message2;
+  textArea2.style.display = "none"
+  submitButton2.style.display = "none"
+  editButton2.style.display = "inline"
+  innerDiv2.style.display = "inline"
+})
+
+editButton2.addEventListener('click', function () {
+  textArea2.style.display = "inline"
+  submitButton2.style.display = "inline"
+  editButton2.style.display = "none"
+  innerDiv2.style.display = "none"
+})
+
+const submitButton3 = document.getElementById('b3')
+const textArea3 = document.getElementById('3')
+const innerDiv3 = document.getElementById('i3')
+const editButton3 = document.getElementById('e3')
+
+submitButton3.addEventListener('click', function () {
+  const message3 = textArea3.value
+  innerDiv3.innerHTML = message3;
+  textArea3.style.display = "none"
+  submitButton3.style.display = "none"
+  editButton3.style.display = "inline"
+  innerDiv3.style.display = "inline"
+})
+
+editButton3.addEventListener('click', function () {
+  textArea3.style.display = "inline"
+  submitButton3.style.display = "inline"
+  editButton3.style.display = "none"
+  innerDiv3.style.display = "none"
+})
+
+const submitButton4 = document.getElementById('b4')
+const textArea4 = document.getElementById('4')
+const innerDiv4 = document.getElementById('i4')
+const editButton4 = document.getElementById('e4')
+
+submitButton4.addEventListener('click', function () {
+  const message4 = textArea4.value
+  innerDiv4.innerHTML = message4;
+  textArea4.style.display = "none"
+  submitButton4.style.display = "none"
+  editButton4.style.display = "inline"
+  innerDiv4.style.display = "inline"
+})
+
+editButton4.addEventListener('click', function () {
+  textArea4.style.display = "inline"
+  submitButton4.style.display = "inline"
+  editButton4.style.display = "none"
+  innerDiv4.style.display = "none"
+})
+
+const submitButton5 = document.getElementById('b5')
+const textArea5 = document.getElementById('5')
+const innerDiv5 = document.getElementById('i5')
+const editButton5 = document.getElementById('e5')
+
+submitButton5.addEventListener('click', function () {
+  const message5 = textArea5.value
+  innerDiv5.innerHTML = message5;
+  textArea5.style.display = "none"
+  submitButton5.style.display = "none"
+  editButton5.style.display = "inline"
+  innerDiv5.style.display = "inline"
+})
+
+editButton5.addEventListener('click', function () {
+  textArea5.style.display = "inline"
+  submitButton5.style.display = "inline"
+  editButton5.style.display = "none"
+  innerDiv5.style.display = "none"
+})
+
+const submitButton6 = document.getElementById('b6')
+const textArea6 = document.getElementById('6')
+const innerDiv6 = document.getElementById('i6')
+const editButton6 = document.getElementById('e6')
+
+submitButton6.addEventListener('click', function () {
+  const message6 = textArea6.value
+  innerDiv6.innerHTML = message6;
+  textArea6.style.display = "none"
+  submitButton6.style.display = "none"
+  editButton6.style.display = "inline"
+  innerDiv6.style.display = "inline"
+})
+
+editButton6.addEventListener('click', function () {
+  textArea6.style.display = "inline"
+  submitButton6.style.display = "inline"
+  editButton6.style.display = "none"
+  innerDiv6.style.display = "none"
+})
+
+const submitButton7 = document.getElementById('b7')
+const textArea7 = document.getElementById('7')
+const innerDiv7 = document.getElementById('i7')
+const editButton7 = document.getElementById('e7')
+
+submitButton7.addEventListener('click', function () {
+  const message7 = textArea7.value
+  innerDiv7.innerHTML = message7;
+  textArea7.style.display = "none"
+  submitButton7.style.display = "none"
+  editButton7.style.display = "inline"
+  innerDiv7.style.display = "inline"
+})
+
+editButton7.addEventListener('click', function () {
+  textArea7.style.display = "inline"
+  submitButton7.style.display = "inline"
+  editButton7.style.display = "none"
+  innerDiv7.style.display = "none"
+})
+
+const submitButton8 = document.getElementById('b8')
+const textArea8 = document.getElementById('8')
+const innerDiv8 = document.getElementById('i8')
+const editButton8 = document.getElementById('e8')
+
+submitButton8.addEventListener('click', function () {
+  const message8 = textArea8.value
+  innerDiv8.innerHTML = message8;
+  textArea8.style.display = "none"
+  submitButton8.style.display = "none"
+  editButton8.style.display = "inline"
+  innerDiv8.style.display = "inline"
+})
+
+editButton8.addEventListener('click', function () {
+  textArea8.style.display = "inline"
+  submitButton8.style.display = "inline"
+  editButton8.style.display = "none"
+  innerDiv8.style.display = "none"
+})
+
+const submitButton9 = document.getElementById('b9')
+const textArea9 = document.getElementById('9')
+const innerDiv9 = document.getElementById('i9')
+const editButton9 = document.getElementById('e9')
+
+submitButton9.addEventListener('click', function () {
+  const message9 = textArea9.value
+  innerDiv9.innerHTML = message9;
+  textArea9.style.display = "none"
+  submitButton9.style.display = "none"
+  editButton9.style.display = "inline"
+  innerDiv9.style.display = "inline"
+})
+
+editButton9.addEventListener('click', function () {
+  textArea9.style.display = "inline"
+  submitButton9.style.display = "inline"
+  editButton9.style.display = "none"
+  innerDiv9.style.display = "none"
+})
+
+const submitButton10 = document.getElementById('b10')
+const textArea10 = document.getElementById('10')
+const innerDiv10 = document.getElementById('i10')
+const editButton10 = document.getElementById('e10')
+
+submitButton10.addEventListener('click', function () {
+  const message10 = textArea10.value
+  innerDiv10.innerHTML = message10;
+  textArea10.style.display = "none"
+  submitButton10.style.display = "none"
+  editButton10.style.display = "inline"
+  innerDiv10.style.display = "inline"
+})
+
+editButton10.addEventListener('click', function () {
+  textArea10.style.display = "inline"
+  submitButton10.style.display = "inline"
+  editButton10.style.display = "none"
+  innerDiv10.style.display = "none"
+})
+
+const submitButton11 = document.getElementById('b11')
+const textArea11 = document.getElementById('11')
+const innerDiv11 = document.getElementById('i11')
+const editButton11 = document.getElementById('e11')
+
+submitButton11.addEventListener('click', function () {
+  const message11 = textArea11.value
+  innerDiv11.innerHTML = message11;
+  textArea11.style.display = "none"
+  submitButton11.style.display = "none"
+  editButton11.style.display = "inline"
+  innerDiv11.style.display = "inline"
+})
+
+editButton11.addEventListener('click', function () {
+  textArea11.style.display = "inline"
+  submitButton11.style.display = "inline"
+  editButton11.style.display = "none"
+  innerDiv11.style.display = "none"
+})
+
+const submitButton12 = document.getElementById('b12')
+const textArea12 = document.getElementById('12')
+const innerDiv12 = document.getElementById('i12')
+const editButton12 = document.getElementById('e12')
+
+submitButton12.addEventListener('click', function () {
+  const message12 = textArea12.value
+  innerDiv12.innerHTML = message12;
+  textArea12.style.display = "none"
+  submitButton12.style.display = "none"
+  editButton12.style.display = "inline"
+  innerDiv12.style.display = "inline"
+})
+
+editButton12.addEventListener('click', function () {
+  textArea12.style.display = "inline"
+  submitButton12.style.display = "inline"
+  editButton12.style.display = "none"
+  innerDiv12.style.display = "none"
+})
+
+const submitButton13 = document.getElementById('b13')
+const textArea13 = document.getElementById('13')
+const innerDiv13 = document.getElementById('i13')
+const editButton13 = document.getElementById('e13')
+
+submitButton13.addEventListener('click', function () {
+  const message13 = textArea13.value
+  innerDiv13.innerHTML = message13;
+  textArea13.style.display = "none"
+  submitButton13.style.display = "none"
+  editButton13.style.display = "inline"
+  innerDiv13.style.display = "inline"
+})
+
+editButton13.addEventListener('click', function () {
+  textArea13.style.display = "inline"
+  submitButton13.style.display = "inline"
+  editButton13.style.display = "none"
+  innerDiv13.style.display = "none"
+})
+
+const submitButton14 = document.getElementById('b14')
+const textArea14 = document.getElementById('14')
+const innerDiv14 = document.getElementById('i14')
+const editButton14 = document.getElementById('e14')
+
+submitButton14.addEventListener('click', function () {
+  const message14 = textArea14.value
+  innerDiv14.innerHTML = message14;
+  textArea14.style.display = "none"
+  submitButton14.style.display = "none"
+  editButton14.style.display = "inline"
+  innerDiv14.style.display = "inline"
+})
+
+editButton14.addEventListener('click', function () {
+  textArea14.style.display = "inline"
+  submitButton14.style.display = "inline"
+  editButton14.style.display = "none"
+  innerDiv14.style.display = "none"
+})
+
+const submitButton15 = document.getElementById('b15')
+const textArea15 = document.getElementById('15')
+const innerDiv15 = document.getElementById('i15')
+const editButton15 = document.getElementById('e15')
+
+submitButton15.addEventListener('click', function () {
+  const message15 = textArea15.value
+  innerDiv15.innerHTML = message15;
+  textArea15.style.display = "none"
+  submitButton15.style.display = "none"
+  editButton15.style.display = "inline"
+  innerDiv15.style.display = "inline"
+})
+
+editButton15.addEventListener('click', function () {
+  textArea15.style.display = "inline"
+  submitButton15.style.display = "inline"
+  editButton15.style.display = "none"
+  innerDiv15.style.display = "none"
+})
+
+const submitButton16 = document.getElementById('b16')
+const textArea16 = document.getElementById('16')
+const innerDiv16 = document.getElementById('i16')
+const editButton16 = document.getElementById('e16')
+
+submitButton16.addEventListener('click', function () {
+  const message16 = textArea16.value
+  innerDiv16.innerHTML = message16;
+  textArea16.style.display = "none"
+  submitButton16.style.display = "none"
+  editButton16.style.display = "inline"
+  innerDiv16.style.display = "inline"
+})
+
+editButton16.addEventListener('click', function () {
+  textArea16.style.display = "inline"
+  submitButton16.style.display = "inline"
+  editButton16.style.display = "none"
+  innerDiv16.style.display = "none"
+})
+
+const submitButton17 = document.getElementById('b17')
+const textArea17 = document.getElementById('17')
+const innerDiv17 = document.getElementById('i17')
+const editButton17 = document.getElementById('e17')
+
+submitButton17.addEventListener('click', function () {
+  const message17 = textArea17.value
+  innerDiv17.innerHTML = message17;
+  textArea17.style.display = "none"
+  submitButton17.style.display = "none"
+  editButton17.style.display = "inline"
+  innerDiv17.style.display = "inline"
+})
+
+editButton17.addEventListener('click', function () {
+  textArea17.style.display = "inline"
+  submitButton17.style.display = "inline"
+  editButton17.style.display = "none"
+  innerDiv17.style.display = "none"
+})
+
+const submitButton18 = document.getElementById('b18')
+const textArea18 = document.getElementById('18')
+const innerDiv18 = document.getElementById('i18')
+const editButton18 = document.getElementById('e18')
+
+submitButton18.addEventListener('click', function () {
+  const message18 = textArea18.value
+  innerDiv18.innerHTML = message18;
+  textArea18.style.display = "none"
+  submitButton18.style.display = "none"
+  editButton18.style.display = "inline"
+  innerDiv18.style.display = "inline"
+})
+
+editButton18.addEventListener('click', function () {
+  textArea18.style.display = "inline"
+  submitButton18.style.display = "inline"
+  editButton18.style.display = "none"
+  innerDiv18.style.display = "none"
+})
+
+const submitButton19 = document.getElementById('b19')
+const textArea19 = document.getElementById('19')
+const innerDiv19 = document.getElementById('i19')
+const editButton19 = document.getElementById('e19')
+
+submitButton19.addEventListener('click', function () {
+  const message19 = textArea19.value
+  innerDiv19.innerHTML = message19;
+  textArea19.style.display = "none"
+  submitButton19.style.display = "none"
+  editButton19.style.display = "inline"
+  innerDiv19.style.display = "inline"
+})
+
+editButton19.addEventListener('click', function () {
+  textArea19.style.display = "inline"
+  submitButton19.style.display = "inline"
+  editButton19.style.display = "none"
+  innerDiv19.style.display = "none"
+})
+
+</script>
