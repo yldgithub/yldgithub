@@ -8,183 +8,215 @@
   <title>Lean Canvas</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="master.css">
+  <script>
+  function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+      user = prompt("Please enter your name:","");
+      if (user != "" && user != null) {
+        setCookie("username", user, 30);
+      }
+    }
+  }
+</script>
 </head>
-<body>
+<body onload="checkCookie()">
   <nav>
     <img src="assets/dywsmile.png" alt="">
   </nav>
   <div class="container">
     <h1>Lean canvas planning for Digital Youth Work</h1>
   </div>
-      <div class="box1">
-        <h4>OUR YOUTH WORK OUTCOMES</h4>
-        <div class="row">
-          <div class="col">
-            <div class="item">
-              <h6>What is our youth work project?</h6>
-              <textarea name="name" rows="8" cols="80" id="6"></textarea>
-              <input type="button" value="Save" class="btn btn-success" id="b6">
-              <input type="button" name="" value="edit" class="btn btn-info" id="e6">
-            </div>
-          </div>
-          <div class="col">
-            <div class="item">
-              <h6>What youth work outcomes are we working towards?</h6>
-              <textarea name="name" rows="8" cols="80" id="7"></textarea>
-              <input type="button" value="Save" class="btn btn-success" id="b7">
-              <input type="button" name="" value="edit" class="btn btn-info" id="e7">
-            </div>
-          </div>
-          <div class="col">
-            <div class="item">
-              <h6>How will we use digital to help deliver our goal?</h6>
-              <textarea name="name" rows="8" cols="80" id="8"></textarea>
-              <input type="button" value="Save" class="btn btn-success" id="b8">
-              <input type="button" name="" value="edit" class="btn btn-info" id="e8">
-            </div>
-          </div>
+  <div class="box1">
+    <h4>OUR YOUTH WORK OUTCOMES</h4>
+    <div class="row">
+      <div class="col">
+        <div class="item">
+          <h6>What is our youth work project?</h6>
+          <textarea name="name" rows="8" cols="80" id="6"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b6">
+          <input type="button" name="" value="edit" class="btn btn-info" id="e6">
+        </div>
+      </div>
+      <div class="col">
+        <div class="item">
+          <h6>What youth work outcomes are we working towards?</h6>
+          <textarea name="name" rows="8" cols="80" id="7"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b7">
+          <input type="button" name="" value="edit" class="btn btn-info" id="e7">
+        </div>
+      </div>
+      <div class="col">
+        <div class="item">
+          <h6>How will we use digital to help deliver our goal?</h6>
+          <textarea name="name" rows="8" cols="80" id="8"></textarea>
+          <input type="button" value="Save" class="btn btn-success" id="b8">
+          <input type="button" name="" value="edit" class="btn btn-info" id="e8">
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="row">
-    <div class="col-md-3">
-      <div class="box2">
-        <h4>CHOOSE OUR TECH</h4>
-        <div class="item">
-          <h6>Which app/platforms will work to meet our youth work goals?</h6>
-          <textarea name="name" rows="8" cols="80" id="1"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b1">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e1">
-        </div>
-        <div class="item">
-          <h6>What are young people already using?</h6>
-          <textarea name="name" rows="8" cols="80" id="2"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success" id="b2">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e2">
-        </div>
-        <div class="item">
-          <h6>What devices do they have access to?</h6>
-          <textarea name="name" rows="8" cols="80" id="3"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success" id="b3">
-          <input type="button" name="" value="edit" id="e3" class="btn btn-info">
-        </div>
-        <div class="item">
-          <h6>What devices do they have access to?</h6>
-          <textarea name="name" rows="8" cols="80" id="4"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success" id="b4">
-          <input type="button" name="" value="edit" id="e4" class="btn btn-info">
-        </div>
-        <div class="item">
-          <h6>Does our organisation have policy which influences the use of this app for our chosen purpose?</h6>
-          <textarea name="name" rows="8" cols="80" id="5"></textarea>
-          <input type="button" name="" value="Save" class="btn btn-success" id="b5">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e5">
-        </div>
+<div class="row">
+  <div class="col-md-3">
+    <div class="box2">
+      <h4>CHOOSE OUR TECH</h4>
+      <div class="item">
+        <h6>Which app/platforms will work to meet our youth work goals?</h6>
+        <textarea name="name" rows="8" cols="80" id="1"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b1">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e1">
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="box3">
-        <h4>WHO CAN ACCESS?</h4>
-        <div class="item">
-          <h6>Do the young people have the deivces and internet access they need? </h6>
-          <textarea name="name" rows="8" cols="80" id="9"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b9">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e9">
-        </div>
-        <div class="item">
-          <h6>What about young people with disabilities?</h6>
-          <textarea name="name" rows="8" cols="80" id="10"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b10">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e10">
-        </div>
-        <h4>YOUNG PEOPLE SAY</h4>
-        <div class="item">
-          <h6>What do our young people think?</h6>
-          <textarea name="name" rows="8" cols="80" id="11"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b11">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e11">
-        </div>
-        <div class="item">
-          <h6>What did they say about their digital rights? </h6>
-          <textarea name="name" rows="8" cols="80" id="12"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b12">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e12">
-        </div>
+      <div class="item">
+        <h6>What are young people already using?</h6>
+        <textarea name="name" rows="8" cols="80" id="2"></textarea>
+        <input type="button" name="" value="Save" class="btn btn-success" id="b2">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e2">
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="box4">
-        <h4>GUIDELINES</h4>
-        <div class="item">
-          <h6>What guidelines do I need to create and who for?</h6>
-          <textarea name="name" rows="8" cols="80" id="13"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b13">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e13">
-        </div>
-        <h4>ACTIVITY</h4>
-        <div class="item">
-          <h6>What will we do?</h6>
-          <textarea name="name" rows="8" cols="80" id="14"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b14">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e14">
-        </div>
-        <div class="item">
-          <h6>How will we use the app?</h6>
-          <textarea name="name" rows="8" cols="80" id="15"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b15">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e15">
-        </div>
+      <div class="item">
+        <h6>What devices do they have access to?</h6>
+        <textarea name="name" rows="8" cols="80" id="3"></textarea>
+        <input type="button" name="" value="Save" class="btn btn-success" id="b3">
+        <input type="button" name="" value="edit" id="e3" class="btn btn-info">
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="box5">
-        <h4>SAFETY</h4>
-        <div class="item">
-          <h6>How will we keep young people safe?</h6>
-          <textarea name="name" rows="8" cols="80" id="16"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b16">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e16">
-        </div>
-        <div class="item">
-          <h6>How we will keep youth workers safe?</h6>
-          <textarea name="name" rows="8" cols="80" id="17"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b17">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e17">
-        </div>
+      <div class="item">
+        <h6>What devices do they have access to?</h6>
+        <textarea name="name" rows="8" cols="80" id="4"></textarea>
+        <input type="button" name="" value="Save" class="btn btn-success" id="b4">
+        <input type="button" name="" value="edit" id="e4" class="btn btn-info">
+      </div>
+      <div class="item">
+        <h6>Does our organisation have policy which influences the use of this app for our chosen purpose?</h6>
+        <textarea name="name" rows="8" cols="80" id="5"></textarea>
+        <input type="button" name="" value="Save" class="btn btn-success" id="b5">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e5">
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="box6">
-        <h4>POLICY</h4>
-        <div class="item">
-          <h6>Which of our organisation's policies relate to this project?</h6>
-          <textarea name="name" rows="8" cols="80" id="18"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b18">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e18">
-        </div>
+  <div class="col-md-3">
+    <div class="box3">
+      <h4>WHO CAN ACCESS?</h4>
+      <div class="item">
+        <h6>Do the young people have the deivces and internet access they need? </h6>
+        <textarea name="name" rows="8" cols="80" id="9"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b9">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e9">
       </div>
-    </div>
-    <div class="col">
-      <div class="box7">
-        <h4>PLANNING</h4>
-        <div class="item">
-          <h6>Costs - Timescales -  Approvals - Evaluation</h6>
-          <textarea name="name" rows="8" cols="80" id="19"></textarea>
-          <input type="button" value="Save" class="btn btn-success" id="b19">
-          <input type="button" name="" value="edit" class="btn btn-info" id="e19">
-        </div>
+      <div class="item">
+        <h6>What about young people with disabilities?</h6>
+        <textarea name="name" rows="8" cols="80" id="10"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b10">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e10">
+      </div>
+      <h4>YOUNG PEOPLE SAY</h4>
+      <div class="item">
+        <h6>What do our young people think?</h6>
+        <textarea name="name" rows="8" cols="80" id="11"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b11">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e11">
+      </div>
+      <div class="item">
+        <h6>What did they say about their digital rights? </h6>
+        <textarea name="name" rows="8" cols="80" id="12"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b12">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e12">
       </div>
     </div>
   </div>
-  <input type="button" name="" value="Test" id="test" class="btn btn-primary">
+  <div class="col-md-3">
+    <div class="box4">
+      <h4>GUIDELINES</h4>
+      <div class="item">
+        <h6>What guidelines do I need to create and who for?</h6>
+        <textarea name="name" rows="8" cols="80" id="13"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b13">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e13">
+      </div>
+      <h4>ACTIVITY</h4>
+      <div class="item">
+        <h6>What will we do?</h6>
+        <textarea name="name" rows="8" cols="80" id="14"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b14">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e14">
+      </div>
+      <div class="item">
+        <h6>How will we use the app?</h6>
+        <textarea name="name" rows="8" cols="80" id="15"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b15">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e15">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="box5">
+      <h4>SAFETY</h4>
+      <div class="item">
+        <h6>How will we keep young people safe?</h6>
+        <textarea name="name" rows="8" cols="80" id="16"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b16">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e16">
+      </div>
+      <div class="item">
+        <h6>How we will keep youth workers safe?</h6>
+        <textarea name="name" rows="8" cols="80" id="17"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b17">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e17">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="box6">
+      <h4>POLICY</h4>
+      <div class="item">
+        <h6>Which of our organisation's policies relate to this project?</h6>
+        <textarea name="name" rows="8" cols="80" id="18"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b18">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e18">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="box7">
+      <h4>PLANNING</h4>
+      <div class="item">
+        <h6>Costs - Timescales -  Approvals - Evaluation</h6>
+        <textarea name="name" rows="8" cols="80" id="19"></textarea>
+        <input type="button" value="Save" class="btn btn-success" id="b19">
+        <input type="button" name="" value="edit" class="btn btn-info" id="e19">
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.mjs"></script>
 
 
 <script type="text/javascript">
@@ -510,16 +542,6 @@ editButton19.addEventListener('click', function () {
   textArea19.readOnly = false
   submitButton19.style.display = "inline"
   editButton19.style.display = "none"
-})
-
-import Cookies from 'js-cookie'
-
-Cookies.set('name', 'value')
-
-const button = document.getElementById('test')
-
-button.addEventListener('click', function () {
-  alert('Poop')
 })
 
 </script>
