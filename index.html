@@ -74,6 +74,37 @@
         </div>
       </div>
     </div>
+    <h4>CHOOSE YOUR YOUTH WORK OUTCOMES</h4>
+    <div class="row">
+      <div class="col">
+        <h6>1. Young people are confident, resilient and optimistic about the future</h6>
+        <input type="checkbox" name="" value="" id="20" class="">
+      </div>
+      <div class="col">
+        <h6>2. Young people manage personal, social and formal relationships</h6>
+        <input type="checkbox" name="" value="" id="21" class="">
+      </div>
+      <div class="col">
+        <h6>3. Young people create, describe and apply their learning and skills</h6>
+        <input type="checkbox" name="" value="" id="22" class="">
+      </div>
+      <div class="col">
+        <h6>4. Young people participate safely and effectively in groups</h6>
+        <input type="checkbox" name="" value="" id="23" class="">
+      </div>
+      <div class="col">
+        <h6>5. Young people consider risk, make reasoned decisions and take control</h6>
+        <input type="checkbox" name="" value="" id="24" class="">
+      </div>
+      <div class="col">
+        <h6>6. Young people express their voice and demonstrate social commitment</h6>
+        <input type="checkbox" name="" value="" id="25" class="">
+      </div>
+      <div class="col">
+        <h6>7. Young people broade their perspectives through new experiences and learning</h6>
+        <input type="checkbox" name="" value="" id="26" class="">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -206,6 +237,14 @@ const textArea16 = document.getElementById('16')
 const textArea17 = document.getElementById('17')
 const textArea18 = document.getElementById('18')
 const textArea19 = document.getElementById('19')
+const checkBox1 = document.getElementById('20')
+const checkBox2 = document.getElementById('21')
+const checkBox3 = document.getElementById('22')
+const checkBox4 = document.getElementById('23')
+const checkBox5 = document.getElementById('24')
+const checkBox6 = document.getElementById('25')
+const checkBox7 = document.getElementById('26')
+
 
 function saveValues() {
   setCookie("1", textArea1.value);
@@ -227,6 +266,13 @@ function saveValues() {
   setCookie("17", textArea17.value);
   setCookie("18", textArea18.value);
   setCookie("19", textArea19.value);
+  setCookie("20", checkBox1.value);
+  setCookie("21", checkBox2.value);
+  setCookie("22", checkBox3.value);
+  setCookie("23", checkBox4.value);
+  setCookie("24", checkBox5.value);
+  setCookie("25", checkBox6.value);
+  setCookie("26", checkBox7.value);
   return true;
 }
 
@@ -249,5 +295,12 @@ if(field16 = getCookie("16")) textArea16.value = field16
 if(field17 = getCookie("17")) textArea17.value = field17
 if(field18 = getCookie("18")) textArea18.value = field18
 if(field19 = getCookie("19")) textArea19.value = field19
+if(field20 = getCookie("20")) checkBox1.value = field20
+if(field21 = getCookie("21")) checkBox2.value = field21
+if(field22 = getCookie("22")) checkBox3.value = field22
+if(field23 = getCookie("23")) checkBox4.value = field23
+if(field24 = getCookie("24")) checkBox5.value = field24
+if(field25 = getCookie("25")) checkBox6.value = field25
+if(field26 = getCookie("26")) checkBox7.value = field26
 
 </script>
