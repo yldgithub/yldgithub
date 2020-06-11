@@ -90,7 +90,7 @@
       <div class="item">
         <h6>Which app/platforms will work to meet our youth work goals?</h6>
         <textarea name="name" rows="8" cols="80" id="1"></textarea>
-        <input type="button" value="Save" class="btn btn-success" id="b1">
+        <input type="button" value="Save" class="btn btn-success" id="b1" onclick="saveValues()">
         <input type="button" name="" value="edit" class="btn btn-info" id="e1">
       </div>
       <div class="item">
@@ -543,5 +543,34 @@ editButton19.addEventListener('click', function () {
   submitButton19.style.display = "inline"
   editButton19.style.display = "none"
 })
+
+function saveValues() {
+  setCookie("1", textArea1.value);
+  setCookie("2", textArea2.value);
+  setCookie("3", textArea3.value);
+  setCookie("4", textArea4.value);
+  setCookie("5", textArea5.value);
+  setCookie("6", textArea6.value);
+  setCookie("7", textArea7.value);
+  setCookie("8", textArea8.value);
+  setCookie("9", textArea9.value);
+  setCookie("10", textArea10.value);
+  setCookie("11", textArea11.value);
+  setCookie("12", textArea12.value);
+  setCookie("13", textArea13.value);
+  setCookie("14", textArea14.value);
+  setCookie("15", textArea15.value);
+  setCookie("16", textArea16.value);
+  setCookie("17", textArea17.value);
+  setCookie("18", textArea18.value);
+  setCookie("19", textArea19.value);
+  return true;
+}
+
+if(field1 = getCookie("1")) textArea1.value = field1
+if(field2 = getCookie("2")) textArea2.value = field2
+if(field3 = getCookie("3")) textArea3.value = field3
+if(field4 = getCookie("4")) textArea4.value = field4
+
 
 </script>
