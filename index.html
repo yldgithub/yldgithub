@@ -235,7 +235,6 @@ const textArea16 = document.getElementById('16')
 const textArea17 = document.getElementById('17')
 const textArea18 = document.getElementById('18')
 const textArea19 = document.getElementById('19')
-const checkBox1 = document.getElementById('20')
 const checkBox2 = document.getElementById('21')
 const checkBox3 = document.getElementById('22')
 const checkBox4 = document.getElementById('23')
@@ -264,43 +263,51 @@ function saveValues() {
   setCookie("18", textArea18.value);
   setCookie("19", textArea19.value);
 
-  if(checkBox1.checked == true) {
+  var checkBox1 = document.getElementById('20').checked
+  var checkBox2 = document.getElementById('21').checked
+  var checkBox3 = document.getElementById('22').checked
+  var checkBox4 = document.getElementById('23').checked
+  var checkBox5 = document.getElementById('24').checked
+  var checkBox6 = document.getElementById('25').checked
+  var checkBox7 = document.getElementById('26').checked
+
+  alert(checkBox1)
+
+  if(checkBox1 == true) {
     setCookie("20", true)
   } else {
     setCookie("20", false)
   }
-  if(checkBox2.checked == true) {
+  if(checkBox2 == true) {
     setCookie("21", true)
   } else {
     setCookie("21", false)
   }
-  if(checkBox3.checked == true) {
+  if(checkBox3 == true) {
     setCookie("22", true)
   } else {
     setCookie("22", false)
   }
-  if(checkBox4.checked == true) {
+  if(checkBox4 == true) {
     setCookie("23", true)
   } else {
     setCookie("23", false)
   }
-  if(checkBox5.checked == true) {
+  if(checkBox5 == true) {
     setCookie("24", true)
   } else {
     setCookie("24", false)
   }
-  if(checkBox6.checked == true) {
+  if(checkBox6 == true) {
     setCookie("25", true)
   } else {
     setCookie("25", false)
   }
-  if(checkBox7.checked == true) {
+  if(checkBox7 == true) {
     setCookie("26", true)
   } else {
     setCookie("26", false)
   }
-
-  return true;
 }
 
 if(field1 = getCookie("1")) textArea1.value = field1
