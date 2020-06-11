@@ -50,6 +50,8 @@ h4 {
   background-color: inherit;
   border-color: #0c2340;
   color: #0c2340
+  text-align: center;
+  margin: auto;
 }
 
 .box1 {
@@ -59,6 +61,7 @@ h4 {
   border-style: solid;
   border-width: 2px;
   background-color: #FFDAC2;
+  width: inherit;
 }
 
 .box2, .box5 {
@@ -89,4 +92,8 @@ h4 {
   border-style: solid;
   border-width: 2px;
   background-color: #BAD3F2;
+}
+
+.container {
+  padding-top: 40px;
 }
