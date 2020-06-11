@@ -263,14 +263,42 @@ function saveValues() {
   setCookie("17", textArea17.value);
   setCookie("18", textArea18.value);
   setCookie("19", textArea19.value);
-  setCookie("20", checkBox1.checked);
-  setCookie("21", checkBox2.checked);
-  setCookie("22", checkBox3.checked);
-  setCookie("23", checkBox4.checked);
-  setCookie("24", checkBox5.checked);
-  setCookie("25", checkBox6.checked);
-  setCookie("26", checkBox7.checked);
 
+  if(checkBox1.checked == true) {
+    setCookie("20", true)
+  } else {
+    setCookie("20", false)
+  }
+  if(checkBox2.checked == true) {
+    setCookie("21", true)
+  } else {
+    setCookie("21", false)
+  }
+  if(checkBox3.checked == true) {
+    setCookie("22", true)
+  } else {
+    setCookie("22", false)
+  }
+  if(checkBox4.checked == true) {
+    setCookie("23", true)
+  } else {
+    setCookie("23", false)
+  }
+  if(checkBox5.checked == true) {
+    setCookie("24", true)
+  } else {
+    setCookie("24", false)
+  }
+  if(checkBox6.checked == true) {
+    setCookie("25", true)
+  } else {
+    setCookie("25", false)
+  }
+  if(checkBox7.checked == true) {
+    setCookie("26", true)
+  } else {
+    setCookie("26", false)
+  }
   return true;
 }
 
