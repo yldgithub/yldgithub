@@ -237,13 +237,13 @@ const textArea16 = document.getElementById('16')
 const textArea17 = document.getElementById('17')
 const textArea18 = document.getElementById('18')
 const textArea19 = document.getElementById('19')
-const checkBox1 = document.getElementById('20').checked
-const checkBox2 = document.getElementById('21').checked
-const checkBox3 = document.getElementById('22').checked
-const checkBox4 = document.getElementById('23').checked
-const checkBox5 = document.getElementById('24').checked
-const checkBox6 = document.getElementById('25').checked
-const checkBox7 = document.getElementById('26').checked
+const checkBox1 = document.getElementById('20')
+const checkBox2 = document.getElementById('21')
+const checkBox3 = document.getElementById('22')
+const checkBox4 = document.getElementById('23')
+const checkBox5 = document.getElementById('24')
+const checkBox6 = document.getElementById('25')
+const checkBox7 = document.getElementById('26')
 
 
 function saveValues() {
@@ -266,13 +266,14 @@ function saveValues() {
   setCookie("17", textArea17.value);
   setCookie("18", textArea18.value);
   setCookie("19", textArea19.value);
-  setCookie("20", checkBox1.value);
-  setCookie("21", checkBox2.value);
-  setCookie("22", checkBox3.value);
-  setCookie("23", checkBox4.value);
-  setCookie("24", checkBox5.value);
-  setCookie("25", checkBox6.value);
-  setCookie("26", checkBox7.value);
+  setCookie("20", checkBox1.checked);
+  setCookie("21", checkBox2.checked);
+  setCookie("22", checkBox3.checked);
+  setCookie("23", checkBox4.checked);
+  setCookie("24", checkBox5.checked);
+  setCookie("25", checkBox6.checked);
+  setCookie("26", checkBox7.checked);
+
   return true;
 }
 
