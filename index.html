@@ -272,41 +272,49 @@ function saveValues() {
   var checkBox6 = document.getElementById('25').checked
   var checkBox7 = document.getElementById('26').checked
 
-  if(checkBox1 == 'true') {
-    setCookie("20", 'true')
-  } else {
-    setCookie("20", 'false')
-  }
-  if(checkBox2 == 'true') {
-    setCookie("21", 'true')
-  } else {
-    setCookie("21", 'false')
-  }
-  if(checkBox3 == 'true') {
-    setCookie("22", 'true')
-  } else {
-    setCookie("22", 'false')
-  }
-  if(checkBox4 == 'true') {
-    setCookie("23", 'true')
-  } else {
-    setCookie("23", 'false')
-  }
-  if(checkBox5 == 'true') {
-    setCookie("24", 'true')
-  } else {
-    setCookie("24", 'false')
-  }
-  if(checkBox6 == 'true') {
-    setCookie("25", 'true')
-  } else {
-    setCookie("25", 'false')
-  }
-  if(checkBox7 == 'true') {
-    setCookie("26", 'true')
-  } else {
-    setCookie("26", 'false')
-  }
+  setCookie('20', checkBox1);
+  setCookie('21', checkBox2);
+  setCookie('22', checkBox3);
+  setCookie('23', checkBox4);
+  setCookie('24', checkBox5);
+  setCookie('25', checkBox6);
+  setCookie('26', checkBox7);
+
+  // if(checkBox1 == 'true') {
+  //   setCookie("20", 'true')
+  // } else {
+  //   setCookie("20", 'false')
+  // }
+  // if(checkBox2 == 'true') {
+  //   setCookie("21", 'true')
+  // } else {
+  //   setCookie("21", 'false')
+  // }
+  // if(checkBox3 == 'true') {
+  //   setCookie("22", 'true')
+  // } else {
+  //   setCookie("22", 'false')
+  // }
+  // if(checkBox4 == 'true') {
+  //   setCookie("23", 'true')
+  // } else {
+  //   setCookie("23", 'false')
+  // }
+  // if(checkBox5 == 'true') {
+  //   setCookie("24", 'true')
+  // } else {
+  //   setCookie("24", 'false')
+  // }
+  // if(checkBox6 == 'true') {
+  //   setCookie("25", 'true')
+  // } else {
+  //   setCookie("25", 'false')
+  // }
+  // if(checkBox7 == 'true') {
+  //   setCookie("26", 'true')
+  // } else {
+  //   setCookie("26", 'false')
+  // }
 }
 
 if(field1 = getCookie("1")) textArea1.value = field1
