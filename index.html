@@ -51,6 +51,7 @@
   </nav>
   <div class="container">
     <h1>Lean canvas planning for Digital Youth Work</h1>
+    <p>Fill out the form. Once completed Press the save button at the bottom to retain the information so it can be returned to. To download as pdf use the print to pdf function in the browser.</p>
   </div>
   <div class="box1">
     <h4>OUR YOUTH WORK OUTCOMES</h4>
@@ -271,8 +272,6 @@ function saveValues() {
   var checkBox6 = document.getElementById('25').checked
   var checkBox7 = document.getElementById('26').checked
 
-  alert(checkBox1)
-
   if(checkBox1 == true) {
     setCookie("20", true)
   } else {
@@ -329,14 +328,12 @@ if(field16 = getCookie("16")) textArea16.value = field16
 if(field17 = getCookie("17")) textArea17.value = field17
 if(field18 = getCookie("18")) textArea18.value = field18
 if(field19 = getCookie("19")) textArea19.value = field19
-if(field20 = getCookie("20")) document.getElementById('20').checked = field20
-if(field21 = getCookie("21")) document.getElementById('21').checked = field21
-if(field22 = getCookie("22")) document.getElementById('22').checked = field22
-if(field23 = getCookie("23")) document.getElementById('23').checked = field23
-if(field24 = getCookie("24")) document.getElementById('24').checked = field24
-if(field25 = getCookie("25")) document.getElementById('25').checked = field25
-if(field26 = getCookie("26")) document.getElementById('26').checked = field26
-
-alert(field20)
+if(field20 = getCookie("20")) document.getElementById('20') = field20
+if(field21 = getCookie("21")) document.getElementById('21') = field21
+if(field22 = getCookie("22")) document.getElementById('22') = field22
+if(field23 = getCookie("23")) document.getElementById('23') = field23
+if(field24 = getCookie("24")) document.getElementById('24') = field24
+if(field25 = getCookie("25")) document.getElementById('25') = field25
+if(field26 = getCookie("26")) document.getElementById('26') = field26
 
 </script>
