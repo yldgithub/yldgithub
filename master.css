@@ -18,7 +18,7 @@ textarea {
 body {
   margin: 20px;
   padding: 20px;
-  background-color: #EEF4FC;
+  background-color: #ECEBE9;
 }
 
 .btn {
@@ -61,8 +61,9 @@ h4 {
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
-  background-color: #FFDAC2;
+  /* background-color: #FFDAC2; */
   width: inherit;
+  background-color: white;
 }
 
 .box2, .box5 {
@@ -72,7 +73,9 @@ h4 {
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
-  background-color: #FED8DC;
+  /* background-color: #FED8DC; */
+  background-color: white;
+
 }
 
 .box3, .box7 {
@@ -82,7 +85,9 @@ h4 {
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
-  background-color: #ACD7C6;
+  /* background-color: #ACD7C6; */
+  background-color: white;
+
 }
 
 .box4, .box6 {
@@ -92,7 +97,9 @@ h4 {
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
-  background-color: #BAD3F2;
+  /* background-color: #BAD3F2; */
+  background-color: white;
+
 }
 
 .container {
